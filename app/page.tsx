@@ -8,6 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Hero 
           imgSrc={`./onesource_banner.png`}
+          imgAlt={`OneSource Banner`}
           title={`Transform Your Shirt Ideas into Reality!`} 
           content={`At One Source Marketing, we specialize in providing high quality shirts for business brands, corporate uniforms, and events. `} />
 

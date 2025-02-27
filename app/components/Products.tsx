@@ -27,12 +27,12 @@ export const Products = () => (
   </div>
 );
 
-const Product =(props :any) =>{return(
+const Product =({title,productlist}:{title:string, productlist:Array<string>}) =>{return(
     <Card className="w-full shadow-2xl shadow-blue-200 rounded-md">
             <CardHeader>
               <CardTitle>
                 <span className="flex flex-row gap-4 items-center font-normal text-4xl bg-gradient-to-b from-blue-950 via-blue-600 to-blue-300 text-transparent bg-clip-text  ">
-                  {props.title}
+                  {title}
                 </span>
               </CardTitle>
               <CardDescription>
@@ -46,7 +46,7 @@ const Product =(props :any) =>{return(
                   <div className="flex flex-row gap-4">
                       
                     <ul className={`list-disc px-10 text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl`}>
-                    {props.productlist.map((item :string,index:number) => (
+                    {productlist.map((item :string,index:number) => (
                         <li key={index}> {item}</li>
                     ))}
                     </ul>

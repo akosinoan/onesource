@@ -14,7 +14,7 @@ import {
 export function WhyUs() {
   
   const plugin = useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
   return (
