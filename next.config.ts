@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/onesource",
+  basePath: process.env.PAGES_BASE_PATH,
   output:`export`, /* config options here */
 };
 
