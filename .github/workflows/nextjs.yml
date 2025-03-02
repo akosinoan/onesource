@@ -50,10 +50,13 @@ jobs:
           fi
       - name: Setup Node
         uses: actions/setup-node@v4
+      
         with:
           node-version: "22"
           cache-dependency-path: subdir/package-lock.json
           cache: 'npm'
+      - run: ci
+      - run: test    
      
       - name: Setup Pages
         uses: actions/configure-pages@v5
