@@ -60,6 +60,14 @@ export default function Footer() {
         </div>
 */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
+          <p className="text-xs text-muted-foreground/50">
+            <button
+              onClick={() => scrollTo("#hero")}
+              className="mb-4 cursor-pointer border-none bg-transparent text-xl font-bold tracking-tight text-foreground"
+            >
+              <span className="text-accent">One</span>Source
+            </button>
+          </p>
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()}{" "}
             <a
@@ -68,9 +76,6 @@ export default function Footer() {
             >
               Noanworks Development
             </a>
-          </p>
-          <p className="text-xs text-muted-foreground/50">
-            One Source Marketing
           </p>
         </div>
       </div>
