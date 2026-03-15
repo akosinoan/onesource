@@ -3,8 +3,17 @@ import { useEffect, useRef, useState } from "react";
 
 function ImageCarousel({ images }) {
   const [current, setCurrent] = useState(0);
+  const [loadedSet, setLoadedSet] = useState(new Set());
   const pausedRef = useRef(false);
   const count = images.length;
+
+  // Preload all images upfront
+  useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images]);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -15,6 +24,9 @@ function ImageCarousel({ images }) {
     return () => clearInterval(id);
   }, [count]);
 
+  const handleLoad = (i) =>
+    setLoadedSet((prev) => new Set(prev).add(i));
+
   return (
     <div
       className="relative w-full overflow-hidden rounded-xl bg-muted"
@@ -22,13 +34,19 @@ function ImageCarousel({ images }) {
       onMouseEnter={() => (pausedRef.current = true)}
       onMouseLeave={() => (pausedRef.current = false)}
     >
+      {/* Skeleton shown until current slide is loaded */}
+      {!loadedSet.has(current) && (
+        <div className="absolute inset-0 animate-pulse bg-muted" />
+      )}
+
       {images.map((src, i) => (
         <img
           key={i}
           src={src}
           alt={`slide ${i + 1}`}
+          onLoad={() => handleLoad(i)}
           className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-700 ${
-            i === current ? "opacity-100" : "opacity-0"
+            i === current && loadedSet.has(i) ? "opacity-100" : "opacity-0"
           }`}
         />
       ))}
