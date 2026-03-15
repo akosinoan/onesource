@@ -18,8 +18,7 @@ export default function CTABanner() {
             Ready to Get Started?
           </h2>
           <p className="mx-auto mb-8 max-w-lg text-blue-100/80">
-            Let us help you create the perfect shirts for your brand, team, or
-            event. Get in touch today. We would be happy to assist you with your
+            Get in touch today. We would be happy to assist you with your
             promotional product needs.
           </p>
           <a href="mailto:cheycastilo@gmail.com?subject=Inquiry from OneSource Web Page">

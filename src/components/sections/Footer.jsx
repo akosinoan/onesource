@@ -18,7 +18,7 @@ export default function Footer() {
               onClick={() => scrollTo("#hero")}
               className="mb-4 cursor-pointer border-none bg-transparent text-xl font-bold tracking-tight text-foreground"
             >
-              <span className="text-accent">One</span>Source
+              One <span className="text-accent">Source</span>
             </button>
             <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
               453 Malaya Street Mandaluyong City

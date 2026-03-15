@@ -12,7 +12,7 @@ export default function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16"
     >
       {/* ── Gradient layers ── */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#020617] via-[#1e3a8a] to-[#1d4ed8]" />
+      <div className="absolute inset-0 bg-linear-to-br from-[#020617] via-[#1e3a8a] to-[#1d4ed8]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_30%_-10%,rgba(59,130,246,0.35),transparent)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_80%_110%,rgba(147,197,253,0.18),transparent)]" />
 
@@ -33,7 +33,7 @@ export default function Hero() {
           <img
             src="./onesource_banner.png"
             alt="OneSource Banner"
-            className="max-h-64 object-contain"
+            className="object-contain scale-[1.1]"
           />
         </div>
 
@@ -47,7 +47,7 @@ export default function Hero() {
         </h1>
 
         {/* Subheading */}
-        <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-blue-100/70 md:text-xl">
+        <p className="mx-auto mb-10 max-w-2xl text-sm leading-relaxed text-blue-100/70 md:text-base">
           We are a corporate giveaways supplier in the Philippines providing
           customized promotional products designed to help businesses strengthen
           their brand presence and build lasting connections with clients and

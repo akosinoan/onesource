@@ -24,13 +24,11 @@ function ImageCarousel({ images }) {
     return () => clearInterval(id);
   }, [count]);
 
-  const handleLoad = (i) =>
-    setLoadedSet((prev) => new Set(prev).add(i));
+  const handleLoad = (i) => setLoadedSet((prev) => new Set(prev).add(i));
 
   return (
     <div
-      className="relative w-full overflow-hidden rounded-xl bg-muted"
-      style={{ aspectRatio: "16/9" }}
+      className="relative w-full h-64 md:h-80 overflow-hidden rounded-xl border border-border bg-muted"
       onMouseEnter={() => (pausedRef.current = true)}
       onMouseLeave={() => (pausedRef.current = false)}
     >
@@ -130,7 +128,7 @@ const CATEGORIES = [
       <>
         <p className="text-muted-foreground leading-relaxed">
           Promotional apparel is one of the most effective ways to promote your
-          brand. These items transform everyday clothing into{" "}
+          brand. These items transform everyday clothing into&nbsp;
           <strong className="text-foreground">
             walking advertisements for your company
           </strong>
@@ -155,7 +153,7 @@ const CATEGORIES = [
           </ul>
         </div>
         <p className="mt-4 text-sm text-muted-foreground">
-          Customization options include{" "}
+          Customization options include&nbsp;
           <strong className="text-foreground">
             screen printing, DTF printing, and embroidery
           </strong>
@@ -171,14 +169,14 @@ const CATEGORIES = [
       <>
         <p className="text-muted-foreground leading-relaxed">
           Custom tumblers are highly popular promotional products because they
-          are{" "}
+          are&nbsp;
           <strong className="text-foreground">
             useful, reusable, and long-lasting
           </strong>
           .
         </p>
         <p className="mt-4 text-sm text-muted-foreground">
-          Available in different styles including{" "}
+          Available in different styles including&nbsp;
           <strong className="text-foreground">
             stainless steel tumblers, plastic tumblers, and travel mugs
           </strong>
@@ -193,16 +191,16 @@ const CATEGORIES = [
     description: (
       <>
         <p className="text-muted-foreground leading-relaxed">
-          Wooden promotional items provide a{" "}
+          Wooden promotional items provide a&nbsp;
           <strong className="text-foreground">
             premium and eco-friendly branding option
-          </strong>{" "}
-          that stands out from traditional giveaways.
+          </strong>
+          &nbsp; that stands out from traditional giveaways.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
-          We provide{" "}
-          <strong className="text-foreground">custom engraving services</strong>{" "}
-          to personalize wooden items with your{" "}
+          We provide&nbsp;
+          <strong className="text-foreground">custom engraving services</strong>
+          &nbsp; to personalize wooden items with your&nbsp;
           <strong className="text-foreground">
             company logo, brand name, or special message
           </strong>
@@ -232,10 +230,10 @@ const CATEGORIES = [
     description: (
       <>
         <p className="text-muted-foreground leading-relaxed">
-          Promotional bags are practical marketing tools that provide{" "}
-          <strong className="text-foreground">continuous brand exposure</strong>{" "}
-          whenever they are used. Every time the bag is used for shopping, work,
-          or travel, your company logo is seen by more people.
+          Promotional bags are practical marketing tools that provide&nbsp;
+          <strong className="text-foreground">continuous brand exposure</strong>
+          &nbsp;whenever they are used. Every time the bag is used for shopping,
+          work, or travel, your company logo is seen by more people.
         </p>
         <div className="mt-4">
           <p className="mb-2 font-semibold">Available bag types:</p>
@@ -262,11 +260,11 @@ const CATEGORIES = [
           "Rain or shine, your brand stands out."
         </p>
         <p className="mt-3 text-muted-foreground leading-relaxed">
-          Branded{" "}
-          <strong className="text-foreground">umbrellas and raincoats</strong>{" "}
-          are practical giveaways that people use again and again. Every time it
-          rains and the sun shines, your logo stays visible — turning a simple
-          weather essential into a{" "}
+          Branded&nbsp;
+          <strong className="text-foreground">umbrellas and raincoats</strong>
+          &nbsp; are practical giveaways that people use again and again. Every
+          time it rains and the sun shines, your logo stays visible - turning a
+          simple weather essential into a&nbsp;
           <strong className="text-foreground">powerful marketing tool</strong>.
         </p>
       </>
@@ -297,7 +295,7 @@ export default function Offers() {
           {CATEGORIES.map((cat, idx) => (
             <div
               key={cat.title}
-              className="rounded-xl border border-border bg-card p-8 transition-all duration-300 hover:border-accent/40"
+              className="rounded-xl border border-border bg-card p-8 shadow-md shadow-black/20 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10"
             >
               <div
                 className={`flex flex-col gap-10 md:flex-row md:items-center ${
