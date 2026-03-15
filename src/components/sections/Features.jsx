@@ -27,15 +27,18 @@ export default function Features() {
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          <p className="text-sm font-black uppercase tracking-widest text-accent">
             What Sets Us Apart
           </p>
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
             Built for Your Brand
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Quality shirts, expert customization, and flexible solutions — all
-            from a single trusted source.
+            Our wide range of customizable promotional products is perfect for
+            corporate events, marketing campaigns, employee recognition, trade
+            shows, and brand promotions. Each item can be personalized with your
+            company logo, brand colors, or campaign message to ensure maximum
+            impact.
           </p>
         </div>
 

@@ -28,27 +28,30 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        {/* Badge */}
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] px-4 py-1.5 backdrop-blur-sm">
-          <Shirt size={15} className="text-blue-300" />
-          <span className="text-sm font-medium text-blue-200">
-            Premium Shirt Solutions
-          </span>
+        {/* Banner */}
+        <div className="mb-8 flex justify-center">
+          <img
+            src="./onesource_banner.png"
+            alt="OneSource Banner"
+            className="max-h-64 object-contain"
+          />
         </div>
 
         {/* Headline */}
-        <h1 className="mb-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-7xl">
-          Transform Your Shirt{" "}
+        <h1 className=" mb-5 text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-black drop-shadow-md drop-shadow-gray-900 bg-linear-to-b from-blue-800 via-blue-100 to-white text-transparent bg-clip-text inline-block ">
+          Your brand,
           <br className="hidden sm:block" />
-          <span className="bg-gradient-to-r from-blue-300 via-blue-100 to-white bg-clip-text text-transparent">
-            Ideas into Reality
+          <span className="bg-linear-to-r from-blue-300 via-blue-100 to-white bg-clip-text text-transparent">
+            our giveaways.
           </span>
         </h1>
 
         {/* Subheading */}
         <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-blue-100/70 md:text-xl">
-          At One Source Marketing, we specialize in providing high quality shirts
-          for business brands, corporate uniforms, and events.
+          We are a corporate giveaways supplier in the Philippines providing
+          customized promotional products designed to help businesses strengthen
+          their brand presence and build lasting connections with clients and
+          employees.
         </p>
 
         {/* CTAs */}
@@ -72,7 +75,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom fade into page */}
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-background to-transparent" />
     </section>
   );
 }

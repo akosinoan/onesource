@@ -23,7 +23,7 @@ export default function Navbar({ dark, toggleTheme }) {
           onClick={() => scrollTo("#hero")}
           className="cursor-pointer border-none bg-transparent text-xl font-bold tracking-tight text-foreground"
         >
-          <span className="text-accent">One</span>Source
+          One <span className="text-accent">Source</span>
         </button>
 
         {/* Desktop links */}
