@@ -295,7 +295,7 @@ export default function Offers() {
           {CATEGORIES.map((cat, idx) => (
             <div
               key={cat.title}
-              className="rounded-xl border border-border bg-card p-8 shadow-md shadow-black/20 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10"
+              className="rounded-xl border border-border bg-card p-8 shadow-md shadow-blue-600/30 dark:shadow-black/20 transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:shadow-accent/10"
             >
               <div
                 className={`flex flex-col gap-10 md:flex-row md:items-center ${

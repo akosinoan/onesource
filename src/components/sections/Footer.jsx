@@ -19,6 +19,7 @@ export default function Footer() {
               className="mb-4 cursor-pointer border-none bg-transparent text-xl font-bold tracking-tight text-foreground"
             >
               One <span className="text-accent">Source</span>
+              <span className="">&nbsp;Marketing Services</span>
             </button>
             <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
               453 Malaya Street Mandaluyong City
