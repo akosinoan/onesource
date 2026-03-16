@@ -18,8 +18,9 @@ export default function CTABanner() {
             Ready to Get Started?
           </h2>
           <p className="mx-auto mb-8 max-w-lg text-blue-100/80">
-            Get in touch today. We would be happy to assist you with your
-            promotional product needs.
+            Get in touch today.
+            <br />
+            We would be happy to assist you with your requirements.
           </p>
           <a href="mailto:cheycastilo@gmail.com?subject=Inquiry from OneSource Web Page">
             <Button variant="accent" size="lg">

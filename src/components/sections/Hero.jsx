@@ -33,7 +33,8 @@ export default function Hero() {
           <img
             src="./onesource_banner.png"
             alt="OneSource Banner"
-            className="object-contain scale-[1.1]"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain rounded-2xl
+            bg-white/75 backdrop-blur-sm p-4 shadow-xl shadow-black/20 border border-white/10"
           />
         </div>
 

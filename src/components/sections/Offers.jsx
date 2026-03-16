@@ -256,7 +256,7 @@ const CATEGORIES = [
     images: UMBRELLA_IMAGES,
     description: (
       <>
-        <p className="text-muted-foreground leading-relaxed italic">
+        <p className="text-foreground leading-relaxed italic">
           "Rain or shine, your brand stands out."
         </p>
         <p className="mt-3 text-muted-foreground leading-relaxed">
@@ -308,11 +308,13 @@ export default function Offers() {
                 </div>
 
                 {/* Text */}
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 font-sans">
                   <h3 className="mb-4 text-2xl font-bold text-accent">
                     {cat.title}
                   </h3>
-                  {cat.description}
+                  <h4 className="text-sm font-semibold text-accent">
+                    {cat.description}
+                  </h4>
                 </div>
               </div>
             </div>
