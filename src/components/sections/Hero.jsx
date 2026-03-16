@@ -39,11 +39,10 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className=" mb-5 text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-black drop-shadow-md drop-shadow-gray-900 bg-linear-to-b from-blue-800 via-blue-100 to-white text-transparent bg-clip-text inline-block ">
-          Your brand,
-          <br className="hidden sm:block" />
+        <h1 className="mb-5 text-[clamp(1.5rem,7vw,4rem)] tracking-tighter text-center font-black drop-shadow-md drop-shadow-gray-900 bg-linear-to-b from-blue-800 via-blue-100 to-white text-transparent bg-clip-text whitespace-nowrap">
+          "Your brand,{" "}
           <span className="bg-linear-to-r from-blue-300 via-blue-100 to-white bg-clip-text text-transparent">
-            our giveaways.
+            our giveaways."
           </span>
         </h1>
 
