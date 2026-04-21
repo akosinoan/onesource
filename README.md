@@ -1,16 +1,85 @@
-# React + Vite
+# OneSource Marketing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Corporate giveaways supplier website for **One Source Marketing**, a Philippines-based company specializing in customized promotional products and branded merchandise.
 
-Currently, two official plugins are available:
+**Live site:** https://onesourcemarketing.org
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Product showcase with image carousels across five categories (apparel, tumblers, wooden items, bags, umbrellas)
+- Dark / light theme toggle with localStorage persistence
+- Fully responsive layout (mobile-first with Tailwind CSS)
+- SEO-optimized with Open Graph, Twitter Card, and JSON-LD structured data
+- Automated deployment to GitHub Pages via GitHub Actions
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Layer | Technology |
+|---|---|
+| UI | React 19 |
+| Build | Vite 8 |
+| Styling | Tailwind CSS 4 |
+| Icons | lucide-react |
+| Deployment | GitHub Pages |
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── sections/
+│   │   ├── Navbar.jsx        # Fixed nav with mobile menu & theme toggle
+│   │   ├── Hero.jsx          # Banner, headline, CTA buttons
+│   │   ├── Features.jsx      # "What Sets Us Apart" cards
+│   │   ├── Offers.jsx        # Product categories with carousels
+│   │   ├── WhyChooseUs.jsx   # Value proposition section
+│   │   ├── CTABanner.jsx     # Final call-to-action
+│   │   └── Footer.jsx        # Contact info & quick links
+│   └── ui/
+│       └── button.jsx        # Reusable button with CVA variants
+├── hooks/
+│   └── useTheme.js           # Dark/light mode hook
+├── lib/
+│   └── utils.js              # cn() class merging utility
+└── App.jsx                   # Root component
+public/
+└── images/                   # Product images (23 files)
+```
+
+## Getting Started
+
+**Prerequisites:** Node.js 18+
+
+```bash
+# Install dependencies
+npm install --legacy-peer-deps
+
+# Start development server (http://localhost:5173)
+npm run dev
+```
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server with HMR |
+| `npm run build` | Production build → `dist/` |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
+
+## Deployment
+
+Pushing to `main` triggers the GitHub Actions workflow (`.github/workflows/`) which builds and deploys to GitHub Pages. The custom domain `onesourcemarketing.org` is configured via `public/CNAME`.
+
+---
+
+## Contact
+
+**One Source Marketing**
+- Email: cheycastilo@gmail.com
+- Phone: +63-919-095-6982
+- Address: 453 Malaya Street, Mandaluyong City, Philippines
+
+Built by [Noanworks Development](mailto:noanworks@gmail.com)
